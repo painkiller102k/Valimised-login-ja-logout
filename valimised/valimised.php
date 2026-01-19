@@ -8,6 +8,7 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 
+
 //+1 punkt
 global $yhendus;
 if (isset($_REQUEST['lisa1punkt'])) {
@@ -55,6 +56,7 @@ if (isset($_REQUEST['uue_komment_id'])) {
 </head>
 <body>
 <h1>TARpv24 presidendi valimised</h1>
+
 <nav>
     <ul>
         <li><a href="valimised.php">Valimised</a></li>
@@ -67,9 +69,11 @@ if (isset($_REQUEST['uue_komment_id'])) {
         ?>
 
         <li><a href="logout.php">Logi välja</a></li>
+        <span class="user-info">
+        Tere, <?= htmlspecialchars($_SESSION['user']) ?>!
+    </span>
     </ul>
 </nav>
-
 <table>
     <tr>
         <th>President nimi</th>
