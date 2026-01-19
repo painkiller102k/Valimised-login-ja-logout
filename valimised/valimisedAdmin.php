@@ -111,6 +111,9 @@ if (isset($_REQUEST['kommentaarid_nuliks'])) {
         ?>
 
         <li><a href="logout.php">Logi välja</a></li>
+        <span class="user-info">
+        Tere, <?= htmlspecialchars($_SESSION['user']) ?>!
+    </span>
     </ul>
 </nav>
 
