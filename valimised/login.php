@@ -48,11 +48,11 @@ if (!empty($_POST['login']) && !empty($_POST['pass'])) {
 ?>
 <?php
 if (!empty($error)) {
-    echo "<p style='color:#ed4141;'>$error</p>";
+    echo "<p style='color:red;'>$error</p>";
 }
 ?>
-<link rel="stylesheet" href="galeriiStyle.css">
-<h1>Login</h1>
+<link rel="stylesheet" href="loginStyle.css">
+<h1>Login TARpv24 presidendi valimised</h1>
 <form action="" method="post">
     Login: <input type="text" name="login"><br>
     Password: <input type="password" name="pass"><br>
